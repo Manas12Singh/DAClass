@@ -3,7 +3,7 @@ struct Job {
     int deadline, profit;
 };
 
-bool comparison(Job a, Job b) {
+inline bool comparison(Job a, Job b) {
     return (a.profit > b.profit);
 }
 
