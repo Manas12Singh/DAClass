@@ -15,7 +15,7 @@ private:
     bitset<MAX_SIZE> isNotPrime;
     int size, keyPresent, PRIME;
 
-    void __setStieve() {
+    void setStieve() {
         isNotPrime[0] = isNotPrime[1] = true;
         for (long long i = 2; i * i <= MAX_SIZE; i++)
             if (!isNotPrime[i])
@@ -23,17 +23,17 @@ private:
                     isNotPrime[j] = true;
     }
 
-    int inline hash1(int value) {
+    int inline hash1(int value) const {
         return value % size;
     }
 
-    int inline hash2(int value) {
+    int inline hash2(int value) const {
         return PRIME - (value % PRIME);
     }
 
 public:
-    HashTable(int size) : keyPresent(0), size(size), hashTable(vector<int>(size)), occupied(vector<short>(size, 0)) {
-        __setStieve();
+    explicit HashTable(int size) : keyPresent(0), size(size), hashTable(vector<int>(size)), occupied(vector<short>(size, 0)) {
+        setStieve();
         PRIME = size - 1;
         while (isNotPrime[PRIME])
             PRIME--;
@@ -77,6 +77,7 @@ public:
         while (occupied[probe] != 1 || hashTable[probe] != value)
             probe = (probe + offset) % size;
         occupied[probe] = -1;
+        keyPresent--;
         return 1;
     }
 };
@@ -100,7 +101,7 @@ int main() {
                 cout << "Enter the value to insert: ";
                 cin >> value;
                 if (hashTable.insert(value) == -1)
-                    cout << "Failed to insert value (table might be full or value already exists).\n";
+                    cout << "Failed to insert value (table might be full).\n";
                 else
                     cout << "Value inserted successfully.\n";
                 break;
@@ -128,6 +129,4 @@ int main() {
                 break;
         }
     }
-
-    return 0;
 }
