@@ -60,5 +60,5 @@ int main() {
             }
         }
     }
-    cout << prims(adjList.size(), adjList, 0);
+    cout << prims(adjList.size(), adjList, 3);
 }
