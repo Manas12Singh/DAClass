@@ -1,36 +1,36 @@
 # DA CODES
-Linear Search
-Binary Search
-Tower of Hanoi
-Bubble sort
-Modified Bubble sort 
-Selection sort
-Insertion sort
-Quick sort 
-Randomize quick sort 
-Merge sort 
-Heap sort
-Count sort
-Fibonacci series
-Bfs
-DFS
-Kruskal's
-Prims
-Dijkstra's
-Bellman Ford
-Floyd Warshall
-Activity Selection
-Job Sequencing
-Huffman encoding
-Fractional Knapsack
-0/1 Knapsack
-Longest Common Subsequence
-Matrix Chain Multiplication
-Linear and Quadratic Hashing
-Double Hashing
-Naive String matching
-Rabin-karp
-KMP
-Subset Sum
-Travelling Salesman
-Topological Sort using dfs
+1. Linear Search
+2. Binary Search
+3. Tower of Hanoi
+4. Bubble sort
+5. Modified Bubble sort 
+6. Selection sort
+7. Insertion sort
+8. Quick sort 
+9. Randomize quick sort 
+10. Merge sort 
+11. Heap sort
+12. Count sort
+13. Fibonacci series
+14. Bfs
+15. DFS
+16. Kruskal's
+17. Prims
+18. Dijkstra's
+19. Bellman Ford
+20. Floyd Warshall
+21. Activity Selection
+22. Job Sequencing
+23. Huffman encoding
+24. Fractional Knapsack
+25. 0/1 Knapsack
+26. Longest Common Subsequence
+27. Matrix Chain Multiplication
+28. Linear and Quadratic Hashing
+29. Double Hashing
+30. Naive String matching
+31. Rabin-karp
+32. KMP
+33. Subset Sum
+34. Travelling Salesman
+35. Topological Sort using dfs
