@@ -29,3 +29,4 @@ int main() {
     vector<int> matrixDimension = {1, 2, 3, 4};
     cout << matrixChainMultiplication(matrixDimension);
 }
+
